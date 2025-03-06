@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color:  lightblue;
+                text-align: left;
+                padding: 20px;
+                margin: 0;
+                opacity: 0;
+                animation: fadeIn 1.5s forwards;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            h1, h2 {
+                color: #333;
+                opacity: 0;
+                animation: slideIn 1.5s forwards 0.5s;
+            }
+            @keyframes slideIn {
+                from { opacity: 0; transform: translateX(-30px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+            p {
+                font-size: 18px;
+                max-width: 600px;
+                margin: 10px 0;
+                line-height: 1.5;
+                opacity: 0;
+                animation: fadeIn 2s forwards 1s;
+            }
+            ol {
+                list-style-type: decimal;
+                padding: 15px;
+                text-align: left;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                display: inline-block;
+                opacity: 0;
+                animation: fadeIn 2s forwards 1.5s;
+            }
+            li {
+                background: #f9f9f9;
+                margin: 5px;
+                padding: 10px;
+                border-radius: 5px;
+                display: block;
+                transition: background 0.3s, transform 0.3s;
+                opacity: 0;
+                animation: fadeIn 2s forwards 2s;
+            }
+            li:hover {
+                background: #e0e0e0;
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body background="blue">
+        <h1>ABOUT THE PROJECT</h1>
+        <p id="description">WE PERFORMED A SURVEY IN THE LOCALITY WHO ARE USING DIFFERENT OTT PLATFORMS</p>
+        <h2>THE MEMBERS OF THE PROJECT ARE:</h2>
+        <ol>
+            <li>R. Chanakya (232U1A3393)</li>
+            <li>S. Akash (232U1A3394)</li>
+            <li>Y.V.S.K Madhav Prasad (232U1A33C8)</li>
+            <li>Y. Sriram (232U1A33D1)</li>
+        </ol>
+    </body>
+</html>

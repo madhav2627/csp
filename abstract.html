@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey on Government Schemes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Background Animation */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            animation: gradientBG 10s infinite alternate;
+            background: linear-gradient(#4592be);
+            background-size: 400% 400%;
+            text-align: center;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Content Container */
+        .container {
+            padding: 100px 20px;
+        }
+
+        /* Abstract Box */
+        .abstract {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Title */
+        h1 {
+            color: #32CD32;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Image */
+        .background-image {
+            width: 80%;
+            margin: auto;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .background-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>ABSTRACT</h1>
+        <div class="abstract">
+            <p>The main objective of this project is to conduct a survey on the number of people availing government schemes in an area. 
+            For this project, we selected AC Nagar, SPSR Nellore District for conducting the survey. We have surveyed fifty houses in the 
+            specified locality and enquired about the number of people who are availing government schemes. These government schemes are very 
+            helpful to many people in surviving their lives. This project is useful to identify the people who are eligible and not availing 
+            government schemes.</p>
+        </div>
+        <br>
+        <img src="your-image.jpg" class="background-image" alt="Survey Image">
+    </div>
+
+</body>
+</html>
